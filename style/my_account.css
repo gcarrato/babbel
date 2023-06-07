@@ -368,7 +368,7 @@ header {}
     flex-direction:column;
     box-sizing: border-box;
  
-   
+   box-sizing: border-box;
    padding-top: 6em;
     justify-content:flex-start;
     row-gap: 1em;
