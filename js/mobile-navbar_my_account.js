@@ -47,14 +47,21 @@ btnLogin.addEventListener('click', activeModal);
 btnLogin.addEventListener('touchstart', activeModal);  
 
 
-btnSubscrever.addEventListener('click', activeModal);
-btnSubscrever.addEventListener('touchstart', activeModal);   
 
 
+/* BT- BACK */
+const btBack = document.getElementById('back');
 
 
+function funBack(event){
+
+  if (event.type === 'touchstart') event.preventDefault()
+
+  window.open("index.html");
+
+}
 
 
-
-
-
+btBack.addEventListener('click', funBack); 
+btBack.addEventListener('touchstart', funBack);  
+ 
