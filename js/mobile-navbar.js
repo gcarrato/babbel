@@ -1,3 +1,22 @@
+/* document.addEventListener(
+  "keydown",
+  (e) => {
+    if (e.key === "Enter") {
+      toggleFullScreen();
+    }
+  },
+  false
+);
+
+function toggleFullScreen() {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen();
+  } else if (document.exitFullscreen) {
+    document.exitFullscreen();
+  }
+}
+ */
+
 const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event){
@@ -49,8 +68,6 @@ btnLogin.addEventListener('touchstart', activeModal);
 
 btnSubscrever.addEventListener('click', activeModal);
 btnSubscrever.addEventListener('touchstart', activeModal);   
-
-
 
 
 
