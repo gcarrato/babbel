@@ -154,7 +154,7 @@ fieldset {
 #cont {
 
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0;
     margin: auto;
     position: relative;
@@ -164,7 +164,7 @@ fieldset {
 .content {
 
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0;
     margin: auto;
 
@@ -173,7 +173,7 @@ fieldset {
 .container {
 
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("../img/bg.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -185,7 +185,7 @@ fieldset {
     content: ' ';
     background-color: rgba(0, 0, 0, 0.532);
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     position: absolute;
     top: 0;
     z-index: 999;
@@ -295,7 +295,7 @@ header {}
 
 #menu {
 
-    height: 100vh;
+    min-height: 100vh;
     position: absolute;
     margin: 0;
     padding: 0;
@@ -356,7 +356,7 @@ header {}
 
     /* display: block; */
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     margin: auto;
 
     position: absolute;
@@ -374,7 +374,7 @@ header {}
     left: 0;
     right: 0;
     margin: auto;
-    height: 100vh;
+    min-height: 100vh;
     /*    width: 100%; */
     display: grid;
     align-content: end;
@@ -506,7 +506,7 @@ background-image: none;
         content: ' ';
         background-color: rgba(0, 0, 0, 0);
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
         position: absolute;
         top: 0;
         z-index: 999;
@@ -539,7 +539,7 @@ background-image: none;
     #menu {
         width: 100%;
         flex-direction: row;
-        height: 11vh;
+        min-height: 11vh;
 
         align-items: center;
         position: fixed;
@@ -641,7 +641,7 @@ background-image: none;
 @media screen and (min-width: 750px) {
     body {
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
         padding: 0;
         margin: auto;
 
@@ -671,7 +671,7 @@ background-image: none;
     #menu {
         width: 100%;
         flex-direction: row;
-        height: 10vh;
+        min-height: 10vh;
 
         align-items: center;
         position: fixed;
@@ -711,7 +711,7 @@ background-image: none;
 
     .content__main {
 
-        height: 100vh;
+        min-height: 100vh;
         width: 750px;
         display: grid;
         align-content: flex-start;
@@ -772,7 +772,7 @@ background-image: none;
 @media screen and (max-width: 280px) {
     .btn_main {
         width: 7em;
-        height: 3em;
+        min-height: 3em;
 
     }
 

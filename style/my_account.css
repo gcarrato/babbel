@@ -152,7 +152,7 @@ fieldset {
 .content {
 
    
-    width: 100vw;
+    min-height: 100vw;
     height: 100vh;
     padding: 0;
     margin: auto;
@@ -161,7 +161,7 @@ fieldset {
 .container {
 
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
      padding: 0;
     margin: auto;
 
@@ -345,7 +345,7 @@ header {}
 .main {
 
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     margin: auto;
 
     position: absolute;
@@ -362,7 +362,7 @@ header {}
     left: 0;
     right: 0;
     margin: auto;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction:column;
@@ -465,6 +465,27 @@ a.txt_01 {
   
     
 }
+
+@media (min-width: 600px) and (orientation: landscape) {
+    #btn-mobile {
+        background-image: none;
+
+    }
+    #nav.active #btn-mobile {
+background-image: none;
+    }
+    #content.active #container::after {
+        content: ' ';
+        background-color: rgba(0, 0, 0, 0);
+        width: 100vw;
+        min-height: 100vh;
+        position: absolute;
+        top: 0;
+        z-index: 999;
+    
+    }
+   
+ }
 @media screen and (min-width: 600px) {
 
 
@@ -487,7 +508,7 @@ a.txt_01 {
     #menu {
         width: 100%;
         flex-direction: row;
-        height: 11vh;
+        min-height: 11vh;
 
         align-items: center;
         position: fixed;
@@ -517,7 +538,7 @@ color:#39404A;
     .container {
 
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
          padding: 0;
         margin: auto;
     
@@ -540,7 +561,7 @@ color:#39404A;
         left: 0;
         right: 0;
         margin: auto;
-        height: 100vh;
+        min-height: 100vh;
         width: 100%;
         display: flex;
         flex-direction:column;
@@ -565,7 +586,7 @@ color:#39404A;
 @media screen and (min-width: 750px) {
     body {
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
          padding: 0;
         margin: auto;
     
@@ -582,7 +603,7 @@ color:#39404A;
     .container {
 
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
          padding: 0;
         margin: auto;
     
@@ -601,7 +622,7 @@ color:#39404A;
         left: 0;
         right: 0;
         margin: auto;
-        height: 100vh;
+        min-height: 100vh;
         width: 100%;
         display: flex;
         flex-direction:column;
