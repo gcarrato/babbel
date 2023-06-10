@@ -1,10 +1,4 @@
-html{
-   
-    overflow-y:hidden;
 
-    overflow-x:hidden;
- 
-    }
 
 body {
     margin: 0px;
@@ -213,6 +207,7 @@ header {}
     margin: auto;
     max-width: 100%;
     width: 20%;
+    box-sizing: border-box;
 
 }
 

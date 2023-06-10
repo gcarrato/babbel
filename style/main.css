@@ -1,10 +1,4 @@
-html{
-   
-    overflow-y:hidden;
 
-    overflow-x:hidden;
- 
-    }
 
 body {
     margin: 0px;
@@ -20,14 +14,22 @@ img {
 }
 
 /* LOGIN */
-
-
-dialog::backdrop {
-
+#bg.active_bg::after {
+    content: ' ';
     background-color: rgba(0, 0, 0, 0.532);
+    width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 99999999;
+
 }
 
-#login {
+
+#login{
+
+    display: none;
+
     border: none;
     overflow: hidden;
     width: 17em;
@@ -44,7 +46,18 @@ dialog::backdrop {
     text-align: center;
     opacity: 1;
     z-index: 999999999;
+ 
 }
+
+
+#cont.active #login {
+
+    display: block;
+   
+}
+
+
+
 
 fieldset {
     padding: 0px;
@@ -136,7 +149,7 @@ fieldset {
     opacity: 1;
     color: white;
     font: normal normal 600 16px/21px Milliard;
-    margin-top: 1.5em;
+    margin-top: 1em;
     cursor: pointer;
     transition: .3s;
 }
@@ -147,10 +160,11 @@ fieldset {
 }
 
 .fechar_login {
-
+   padding: .5em .5em 0 .5em;
     text-align: right;
     cursor: pointer;
     transition: .3s;
+    box-sizing: border-box;
 }
 
 .fechar_login:hover {
@@ -166,7 +180,7 @@ fieldset {
     padding: 0;
     margin: auto;
     position: relative;
-
+  
 }
 
 .content {
@@ -213,7 +227,7 @@ header {}
     margin: auto;
     max-width: 100%;
     width: 20%;
-
+box-sizing: border-box;
 }
 
 .logo img {
@@ -520,6 +534,7 @@ background-image: none;
     
     }
    
+   
  }
 @media screen and (min-width: 600px) {
 
@@ -539,8 +554,9 @@ background-image: none;
     }
 
     .navegacao {
-        position: static;
+        position:sticky;
         width: 100vw;
+        z-index: 9999999;
     }
 
     #menu {
@@ -671,8 +687,9 @@ background-image: none;
     }
 
     .navegacao {
-        position: static;
+        position:sticky;
         width: 100vw;
+        z-index: 9999999;
     }
 
     #menu {
@@ -785,7 +802,7 @@ background-image: none;
 
     #login {
 
-        width: 14em;
+        width: 14.5em;
 
     }
 
