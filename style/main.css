@@ -43,7 +43,7 @@ img {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 29px;
     opacity: 1;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -185,7 +185,7 @@ fieldset {
     min-height: 100vh;
     padding: 0;
     margin: auto;
-    position: fixed;
+    position: relative;
   
 }
 
@@ -227,14 +227,13 @@ header {}
 .logo {
 
     position: absolute;
-     padding-top: 3em; 
+    padding-top: 3em; 
     left: 0;
     right: 0;
     margin: auto;
     max-width: 100%;
     width: 20%;
 box-sizing: border-box;
-
 }
 
 .logo img {
@@ -580,7 +579,7 @@ background-image: none;
         min-height: 11vh;
 
         align-items: center;
-        position: absolute;
+        position: fixed;
         display: flex;
 
         top: 0;
@@ -713,7 +712,7 @@ background-image: none;
         min-height: 10vh;
 
         align-items: center;
-        position: absolute;
+        position: fixed;
         display: flex;
 
         top: 0;
