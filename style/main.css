@@ -43,7 +43,7 @@ img {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 29px;
     opacity: 1;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -226,7 +226,7 @@ header {}
 
 .logo {
 
-    position: fixed;
+    position: absolute;
      padding-top: 3em; 
     left: 0;
     right: 0;
@@ -580,7 +580,7 @@ background-image: none;
         min-height: 11vh;
 
         align-items: center;
-        position: fixed;
+        position: absolute;
         display: flex;
 
         top: 0;
@@ -713,7 +713,7 @@ background-image: none;
         min-height: 10vh;
 
         align-items: center;
-        position: fixed;
+        position: absolute;
         display: flex;
 
         top: 0;
