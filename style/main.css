@@ -185,7 +185,7 @@ fieldset {
     min-height: 100vh;
     padding: 0;
     margin: auto;
-    position: relative;
+    position: fixed;
   
 }
 
@@ -234,7 +234,7 @@ header {}
     max-width: 100%;
     width: 20%;
 box-sizing: border-box;
-z-index: 9999999999999999999999999999;
+
 }
 
 .logo img {
