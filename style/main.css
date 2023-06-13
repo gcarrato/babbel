@@ -30,7 +30,7 @@ img {
     content: ' ';
     background-color: rgba(0, 0, 0, 0.532);
     width: 100vw;
-    min-height: 100vh;
+    min-height: 94vh;
     position: absolute;
     top: 0;
     z-index: 99999999;
@@ -185,7 +185,7 @@ fieldset {
 #cont {
 
     width: 100vw;
-    min-height: 100vh;
+    min-height: 94vh;
     padding: 0;
     margin: auto;
     position: relative;
@@ -195,7 +195,7 @@ fieldset {
 .container {
 
     width: 100vw;
-    min-height: 100vh;
+    min-height: 94vh;
     background-image: url("../img/bg.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -207,7 +207,7 @@ fieldset {
     content: ' ';
     background-color: rgba(0, 0, 0, 0.532);
     width: 100vw;
-    min-height: 100vh;
+    min-height: 94vh;
     position: absolute;
     top: 0;
     z-index: 999;
@@ -321,7 +321,7 @@ box-sizing: border-box;
 
 #menu {
 
-    min-height: 100vh;
+    min-height: 94vh;
     position: absolute;
     margin: 0;
     padding: 0;
