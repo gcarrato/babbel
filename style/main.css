@@ -49,7 +49,7 @@ img {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 29px;
     opacity: 1;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -215,7 +215,15 @@ fieldset {
 }
 
 /* HEADER */
-header {}
+header {
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 999999999999999999999999999999999999999;
+    width: 100vw;
+    height: 100vh;
+   
+}
 
 
 .logo {
@@ -563,7 +571,7 @@ background-image: none;
         min-height: 11vh;
 
         align-items: center;
-        position: fixed;
+        position: absolute;
         display: flex;
 
         top: 0;
@@ -589,6 +597,7 @@ background-image: none;
     .container {
 
         width: 100%;
+        position: absolute;
         margin-left: 0;
         margin-right: 0;
         margin: auto;
@@ -597,6 +606,7 @@ background-image: none;
     }
 
     .content__main {
+        position: absolute;
 
         display: grid;
         align-content: flex-start;
@@ -696,7 +706,7 @@ background-image: none;
         min-height: 10vh;
 
         align-items: center;
-        position: fixed;
+        position: absolute;
         display: flex;
 
         top: 0;
