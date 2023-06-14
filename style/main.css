@@ -215,20 +215,12 @@ fieldset {
 }
 
 /* HEADER */
-header {
-    position:fixed;
-    top:0;
-    left:0;
-    z-index: 999999999999999999999999999999999999999;
-    width: 100vw;
-    height: 100vh;
-   
-}
+header {}
 
 
 .logo {
 
-    position: absolute;
+    position: fixed;
     padding-top: 3em; 
     top:0;
     left: 0;
@@ -236,7 +228,7 @@ header {
     margin: auto;
     max-width: 100%;
     width: 20%;
-    z-index: 999;
+   
 box-sizing: border-box;
 }
 
@@ -293,7 +285,13 @@ box-sizing: border-box;
     transition: .7s;
     box-sizing: border-box;
 }
+nav{
+position: fixed;
+top:0;
+left: 0;
+z-index: 999999999999999;
 
+}
 
 .navegacao {
 
@@ -597,7 +595,6 @@ background-image: none;
     .container {
 
         width: 100%;
-        position: absolute;
         margin-left: 0;
         margin-right: 0;
         margin: auto;
@@ -606,7 +603,6 @@ background-image: none;
     }
 
     .content__main {
-        position: absolute;
 
         display: grid;
         align-content: flex-start;
