@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "News Roman";
+    src: url("../font/Leitura-News-Roman-4.otf") format("opentype");
+font-weight: normal;
+font-style: normal;
+    }
+    @font-face {
+        font-family: "Milliard";
+        src: url("../font/Milliard-Medium.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+        }
+
 *{
   margin: 0px;
     padding: 0px;
@@ -13,7 +26,8 @@ box-sizing: border-box;
 body {
     margin: 0px;
     padding: 0px;
-    font-family: 'Open Sans', sans-serif;
+
+    font-family: "Milliard", 'Times New Roman', Times, serif;
     line-height: 1.5;
     background-color: #F2F7F8;
     box-sizing: border-box;
@@ -113,22 +127,22 @@ fieldset {
 
 .perfil_login {
     padding-bottom: 1em;
-    font: normal normal 600 16px/21px Milliard;
+    font-family:  "Milliard";
 }
 
 #login figcaption {
     display: block;
 
-    font-size: 1.2em;
+    font-size: .9em;
     text-align: center;
-    font: normal normal normal 15px/17px Leitura News;
+    font-family:  "News Roman";
 }
 
 #login span {
     display: block;
     text-align: center;
-    font-size: .8em;
-    font: normal normal normal 10px/15px Intro Regular Alt;
+    font-size: .6em;
+    font-family:  "Milliard";
     margin-top: 1em;
 
 }
@@ -157,7 +171,7 @@ fieldset {
     border-radius: 5px;
     opacity: 1;
     color: white;
-    font: normal normal 600 16px/21px Milliard;
+font-family: "Milliard";
     margin-top: 1em;
     cursor: pointer;
     transition: .3s;
@@ -359,8 +373,8 @@ box-sizing: border-box;
 
     text-decoration: none;
     color: white;
-    font-family: sans-serif;
-
+    font-family: "Milliard";
+   
     font-size: 0.9em;
     padding: .5em 0;
     box-sizing: border-box;
@@ -426,7 +440,8 @@ box-sizing: border-box;
 
 .content__main p {
     text-align: center;
-    font: normal normal normal 1em Leitura News;
+    font-family: "News Roman";
+    font-size: .875em;
     letter-spacing: 0px;
     color: #0C2E44;
     opacity: 1;
@@ -437,13 +452,14 @@ box-sizing: border-box;
     width: 10rem;
     height: 3.125rem;
     /* UI Properties */
-
+    font-family: "Milliard";
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #FD7525;
     border-radius: 5px;
     transition: all .5s;
     cursor: pointer;
     box-sizing: border-box;
+  
 }
 
 
@@ -455,7 +471,6 @@ box-sizing: border-box;
 .txt01 {
 
     text-align: center;
-    font: normal normal bold 16px/21px Milliard;
     letter-spacing: 0px;
     color: #FD7525;
     opacity: 1;
@@ -467,7 +482,6 @@ box-sizing: border-box;
 .txt02 {
 
     text-align: center;
-    font: normal normal bold 16px/21px Milliard;
     letter-spacing: 0px;
     color: white;
     background-color: #FD7525;
@@ -531,7 +545,10 @@ background-image: none;
         z-index: 999;
     
     }
-   
+    .logo {
+      
+        padding-top: 3em;
+    }
 
  }
 @media screen and (min-width: 600px) {
@@ -641,7 +658,7 @@ background-image: none;
 
     .content__main p {
         text-align: center;
-        font: normal normal normal 1em Leitura News;
+        font-family: "Milliard";
         letter-spacing: 0px;
         color: white;
         opacity: 1;

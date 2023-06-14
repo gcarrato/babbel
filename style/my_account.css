@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "News Roman";
+    src: url("../font/Leitura-News-Roman-4.otf") format("opentype");
+font-weight: normal;
+font-style: normal;
+    }
+    @font-face {
+        font-family: "Milliard";
+        src: url("../font/Milliard-Medium.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+        }
 *{
     margin: 0px;
       padding: 0px;
@@ -13,7 +25,7 @@
   body {
       margin: 0px;
       padding: 0px;
-      font-family: 'Open Sans', sans-serif;
+      font-family: "Milliard", 'Times New Roman', Times, serif;
       line-height: 1.5;
       background-color: #F2F7F8;
       box-sizing: border-box;
@@ -112,26 +124,26 @@
   }
   
   .perfil_login {
-      padding-bottom: 1em;
-      font: normal normal 600 16px/21px Milliard;
-  }
-  
-  #login figcaption {
-      display: block;
-  
-      font-size: 1.2em;
-      text-align: center;
-      font: normal normal normal 15px/17px Leitura News;
-  }
-  
-  #login span {
-      display: block;
-      text-align: center;
-      font-size: .8em;
-      font: normal normal normal 10px/15px Intro Regular Alt;
-      margin-top: 1em;
-  
-  }
+    padding-bottom: 1em;
+    font-family:  "Milliard";
+}
+
+#login figcaption {
+    display: block;
+
+    font-size: .9em;
+    text-align: center;
+    font-family:  "News Roman";
+}
+
+#login span {
+    display: block;
+    text-align: center;
+    font-size: .6em;
+    font-family:  "Milliard";
+    margin-top: 1em;
+
+}
   
   #input_login {
       position: relative;
@@ -161,6 +173,7 @@
       margin-top: 1em;
       cursor: pointer;
       transition: .3s;
+      font-family: "Milliard";
   }
   
   .btn_login:hover {
@@ -286,15 +299,15 @@
       box-sizing: border-box;
   }
   nav{
-    position: fixed;  
+    position: fixed;
+    z-index: 999999999;
+    /*  width: 53vw; */
+box-sizing: border-box;
   }
   
   .navegacao {
   
-      position: fixed;
-      z-index: 999999999;
-      /*  width: 53vw; */
-  box-sizing: border-box;
+ 
   }
   
   #nav.active #menu {
@@ -361,7 +374,7 @@
   
       text-decoration: none;
       color: white;
-      font-family: sans-serif;
+      font-family: "Milliard";
   
       font-size: 0.9em;
       padding: .5em 0;
@@ -423,9 +436,9 @@
       width: 100%;
      
   }
-  .content__main p {
+  .content__main span {
       text-align: center;
-      font: normal normal normal 1em Leitura News;
+font-family:"News Roman" ;
       letter-spacing: 0px;
       color: #0C2E44;
       opacity: 1;
@@ -460,11 +473,11 @@
     box-sizing: border-box;
     text-align: center;
     background-color: #FD7525;
-    vertical-align: middle;
+
 }
 .btn_main2 a{
    display: block;
-padding-top: .6em;
+padding-top: .7em;
 text-decoration: none;
 color: white;
 }
