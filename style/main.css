@@ -392,7 +392,7 @@ box-sizing: border-box;
     left: 0;
     right: 0;
     margin: auto;
-    padding-bottom: 5em;
+    padding-bottom: 4em;
    height: 100vh;
     display: grid;
     align-content: end;
@@ -532,7 +532,7 @@ background-image: none;
     
     }
    
-   
+
  }
 @media screen and (min-width: 600px) {
 
@@ -649,7 +649,7 @@ background-image: none;
 
     .logo {
         max-width: 8em;
-        padding-top: 5em;
+        padding-top: 3em;
     }
 
     .btn_main {

@@ -220,7 +220,7 @@
   
   .logo {
   
-      position: absolute;
+      position: fixed;
       padding-top: 3em; 
       top:0;
       left: 0;
@@ -285,11 +285,13 @@
       transition: .7s;
       box-sizing: border-box;
   }
-  
+  nav{
+    position: fixed;  
+  }
   
   .navegacao {
   
-      position: relative;
+      position: fixed;
       z-index: 999999999;
       /*  width: 53vw; */
   box-sizing: border-box;
@@ -533,7 +535,12 @@ color: white;
           top: 0;
           z-index: 999;
       
+
       }
+      .logo {
+  
+        padding-top: 3em;
+     }
 
    }
   @media screen and (min-width: 600px) {
@@ -613,7 +620,22 @@ color: white;
   
      
   }
+  @media (min-width: 750px) and (orientation: landscape) {
+    .content__main {
 
+        flex-direction: row;
+          box-sizing: border-box;
+          padding-top: 0em;
+           justify-content:center;
+           column-gap: 1em;
+    
+         }
+         .logo {
+  
+            padding-top: 3em;
+         }
+            
+        }
 
   @media screen and (min-width: 750px) {
       body {
@@ -700,7 +722,12 @@ color: white;
       }
   
   }
- 
+  @media (min-width: 280px) and (orientation: landscape) {
+    .logo {
+  
+        padding-top: 3em;
+     }
+        }
   @media screen and (max-width: 280px) {
      
       #login {
@@ -725,7 +752,21 @@ color: white;
   
       }
   }
+  @media (min-width: 900px) and (orientation: landscape) {
+    .content__main {
+
+        flex-direction: row;
+          box-sizing: border-box;
+          padding-top: 0em;
+           justify-content:center;
+           column-gap: 1em;
+    
+         }
+         .logo {
   
+            padding-top: 3em;
+         }
+        }
   @media screen and (min-width: 900px) {
       .logo {
   
@@ -735,7 +776,21 @@ color: white;
   
   
   }
+  @media (min-width: 800px) and (orientation: landscape) {
+    .content__main {
+
+        flex-direction: row;
+          box-sizing: border-box;
+          padding-top: 0em;
+           justify-content:center;
+           column-gap: 1em;
+    
+         }
+         .logo {
   
+            padding-top: 3em;
+         }
+        }
   @media screen and (min-width: 1080px) {
   
       #menu {
