@@ -419,6 +419,7 @@ box-sizing: border-box;
     align-items: center;
     row-gap: 1em;
     padding: 8em 1em 0 1em;
+    overflow-y: hidden;
   }
 .icon_termos{
     text-align: center;
@@ -614,13 +615,13 @@ display: none;
         justify-content:center;
         align-items: center;
         row-gap: 1em;
-        padding: 8em 1em 0 1em;
+        padding: 0em 1em 0 1em;
       }
   
    
       .logo {
         max-width: 10em;
-        padding-top: 8em;
+        padding-top: 0em;
      }
   
   }
@@ -661,7 +662,7 @@ display: none;
     justify-content:flex-start;
     align-items: center;
     row-gap: 1em;
-    padding: 10em 1em 0 1em;
+    padding: 0em 1em 0 1em;
   }
   }
   @media screen and (min-width: 1024px) {
