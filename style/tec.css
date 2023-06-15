@@ -494,6 +494,20 @@ display: none;
       }
     }
   @media screen and (min-width: 600px) {
+    .logo {
+       
+        width: 100vw;
+        z-index: 999;
+        box-sizing: border-box;
+        background-color: #f2f7f8;
+        display: flex;
+        justify-content: center;
+    }
+    .logo img{
+width: 10em;
+margin: auto;
+
+    }
     .icon_termos img{
 
         display: none;
@@ -611,18 +625,11 @@ display: none;
       .content__main {
   
         width: 750px;
-        box-sizing: border-box;
-        justify-content:center;
-        align-items: center;
-        row-gap: 1em;
-        padding: 0em 1em 0 1em;
+        
       }
   
    
-      .logo {
-        max-width: 10em;
-        padding-top: 0em;
-     }
+      
   
   }
  
@@ -651,37 +658,13 @@ display: none;
       }
   }
   
-  @media screen and (min-width: 800px) {
-    .logo{
-    padding-top: 7em;
-}
-.content__main {
   
-    width: 750px;
-    box-sizing: border-box;
-    justify-content:flex-start;
-    align-items: center;
-    row-gap: 1em;
-    padding: 0em 1em 0 1em;
-  }
-  }
-  @media screen and (min-width: 1024px) {
-    .logo{
-    padding-top: 5em;
-}
-  }
   @media screen and (min-width: 1080px) {
   
     #menu {
         width: 1080px;
 
     }
-
-    .logo {
-
-       padding-top: 7em;
-    }
-
 
 
     .content {
@@ -696,13 +679,9 @@ display: none;
     }
 
 
-    /* .content__main {
+   .content__main {
   
         width: 750px;
-        box-sizing: border-box;
-        justify-content:center;
-        align-items: center;
-        row-gap: 1em;
-        padding: 8em 1em 0 1em;
-      } */
+   
+      }
   }
