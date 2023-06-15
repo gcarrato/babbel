@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: "News Roman";
     src: url("../font/Leitura-News-Roman-4.otf") format("opentype");
@@ -202,12 +201,12 @@ font-style: normal;
       min-height: 100vh;
       padding: 0;
       margin: auto;
-      position: relative;
+     
     
   }
   
   .container {
-  position: fixed;
+ 
       width: 100vw;
       height: 100vh;
       top:0;
@@ -235,8 +234,6 @@ font-style: normal;
   
   /* HEADER */
 
-  
-  
   .logo {
     position: fixed;
     padding-top: 3em; 
@@ -261,7 +258,6 @@ font-style: normal;
       margin: auto;    
   
   }
-  
   /* NAV */
   #btn-mobile:hover {
       opacity: 0.5;
@@ -464,239 +460,264 @@ box-sizing: border-box;
       width: 100%;
   
   
+  } /* MEDIA QUERYES */
+
+ @media screen and (min-width: 49px) {
+    #menu {
+
+        transition: none;
+    }
+}
+
+
+@media (min-width: 600px) and (orientation: landscape) {
+    .container {
+background-image: none;
+    }
+.logo {
+    position: fixed;
+    padding-top: 4em; 
+      height: 12vw;
+      top:0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      max-width: 100vw;
+      z-index: 999;
+  box-sizing: border-box;
+  background-color: #f2f7f8;
+  
   }
   
-  /* MEDIA QUERYES */
+  .logo img {
+    position: fixed;
+      width: 10em;
 
-  @media screen and (min-width: 49px) {
-      #menu {
+      left: 0;
+      right: 0;
+      margin: auto;    
   
-          transition: none;
-      }
   }
-  
- 
-  @media (min-width: 600px) and (orientation: landscape) {
-     .logo {
-       
-        width: 100vw;
-        z-index: 999;
-        box-sizing: border-box;
-        background-color: #f2f7f8;
-        display: flex;
-        justify-content: center;
-    }
-    .logo img{
-width: 10em;
-margin: auto;
-
-    }
-   .icon_termos img{
+ .icon_termos img{
 
 display: none;
-   }
-   
-      #btn-mobile {
-          background-image: none;
-  
-      }
-      #nav.active #btn-mobile {
-  background-image: none;
-      }
-      #content.active #container::after {
-          content: ' ';
-          background-color: rgba(0, 0, 0, 0);
-          width: 100vw;
-          min-height: 100vh;
-          position: absolute;
-          top: 0;
-          z-index: 999;
-      
-      }
-    }
-  @media screen and (min-width: 600px) {
-    .logo {
-       
-        width: 100vw;
-        z-index: 999;
-        box-sizing: border-box;
-        background-color: #f2f7f8;
-        display: flex;
-        justify-content: center;
-    }
-    .logo img{
-width: 10em;
-margin: auto;
+ }
+ 
+    #btn-mobile {
+        background-image: none;
 
     }
-    .icon_termos img{
+    #nav.active #btn-mobile {
+background-image: none;
+    }
+    #content.active #container::after {
+        content: ' ';
+        background-color: rgba(0, 0, 0, 0);
+        width: 100vw;
+        min-height: 100vh;
+        position: absolute;
+        top: 0;
+        z-index: 999;
+    
+    }
+  }
+@media screen and (min-width: 600px) {
+    .container {
+        background-image: none;
+            }
+            .logo {
+                position: fixed;
+                padding-top: 4em; 
+                  height: 12vw;
+                  top:0;
+                  left: 0;
+                  right: 0;
+                  margin: auto;
+                  max-width: 100vw;
+                  z-index: 999;
+              box-sizing: border-box;
+              background-color: #f2f7f8;
+              
+              }
+              
+              .logo img {
+                position: fixed;
+                  width: 10em;
+            
+                  left: 0;
+                  right: 0;
+                  margin: auto;    
+              
+              }
+  .icon_termos img{
+
+      display: none;
+         }
+         
+
+    #nav.active #menu::after {
+        background-image: none;
+
+    }
+
+    #btn-mobile {
 
         display: none;
-           }
-           
- 
-      #nav.active #menu::after {
-          background-image: none;
-  
-      }
-  
-      #btn-mobile {
-  
-          display: none;
-  
-      }
-  
-      .navegacao {
-          position:sticky;
-          width: 100vw;
-          z-index: 9999999;
-      }
-  
-      #menu {
-          width: 100%;
-          flex-direction: row;
-          min-height: 11vh;
-  
-          align-items: center;
-          position: fixed;
-          display: flex;
-  
-          top: 0;
-          left: 0;
-          right: 0;
-          margin: auto;
-          background-color: transparent;
-          padding-top: 0;
-          z-index: 9999999999999;
-          visibility: visible;
-          overflow-y: visible;
-          opacity: 1;
-          transition: none;
-  
-      }
-  
-      #menu li {
-          text-align: center;
-          border-bottom: none;
-          padding: 0;
-      }
-      #menu li a{
-       color: #0C2E44;
+
     }
-  
-     
-  }
 
+    .navegacao {
+        position:sticky;
+        width: 100vw;
+        z-index: 9999999;
+    }
 
-  @media screen and (min-width: 750px) {
-   
-    
-      #nav.active #menu::after {
-          background-image: none;
-  
-      }
-  
-      #btn-mobile {
-  
-          display: none;
-  
-      }
-  
-      .navegacao {
-          position:sticky;
-          width: 100vw;
-          z-index: 9999999;
-      }
-  
-      #menu {
-          width: 100%;
-          flex-direction: row;
-          min-height: 10vh;
-  
-          align-items: center;
-          position: fixed;
-          display: flex;
-  
-          top: 0;
-          left: 0;
-          right: 0;
-          margin: auto;
-  
-          padding-top: 0;
-          z-index: 9999999999999;
-          visibility: visible;
-          overflow-y: visible;
-          opacity: 1;
-          transition: none;
-  
-      }
-  
-      #menu li {
-          text-align: center;
-          border-bottom: none;
-          padding: 0;
-      }
-  
-      .content__main {
-  
-        width: 750px;
-        
-      }
-  
-   
-      
-  
-  }
- 
-  @media screen and (max-width: 280px) {
-     
-      #login {
-  
-          width: 14.5em;
-  
-      }
-  
-      #login input {
-  
-          width: 13em;
-  
-      }
-  
-      #login #checkbox {
-          width: 1.5em;
-  
-      }
-  
-      #login #telNo {
-          width: 14em;
-  
-      }
-  }
-  
-  
-  @media screen and (min-width: 1080px) {
-  
     #menu {
-        width: 1080px;
+        width: 100%;
+        flex-direction: row;
+        min-height: 11vh;
+
+        align-items: center;
+        position: fixed;
+        display: flex;
+
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: transparent;
+        padding-top: 0;
+        z-index: 9999999999999;
+        visibility: visible;
+        overflow-y: visible;
+        opacity: 1;
+        transition: none;
 
     }
 
-
-    .content {
-
-        width: 1080px;
+    #menu li {
+        text-align: center;
+        border-bottom: none;
+        padding: 0;
     }
-
-    .container {
-
-        width: 1080px;
-
-    }
-
-
-   .content__main {
-  
-        width: 750px;
-   
-      }
+    #menu li a{
+     color: #0C2E44;
   }
+
+   
+}
+
+
+@media screen and (min-width: 750px) {
+ 
+  
+    #nav.active #menu::after {
+        background-image: none;
+
+    }
+
+    #btn-mobile {
+
+        display: none;
+
+    }
+
+    .navegacao {
+        position:sticky;
+        width: 100vw;
+        z-index: 9999999;
+    }
+
+    #menu {
+        width: 100%;
+        flex-direction: row;
+        min-height: 10vh;
+
+        align-items: center;
+        position: fixed;
+        display: flex;
+
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        padding-top: 0;
+        z-index: 9999999999999;
+        visibility: visible;
+        overflow-y: visible;
+        opacity: 1;
+        transition: none;
+
+    }
+
+    #menu li {
+        text-align: center;
+        border-bottom: none;
+        padding: 0;
+    }
+
+    .content__main {
+
+      width: 750px;
+      
+    }
+
+ 
+    
+
+}
+
+@media screen and (max-width: 280px) {
+   
+    #login {
+
+        width: 14.5em;
+
+    }
+
+    #login input {
+
+        width: 13em;
+
+    }
+
+    #login #checkbox {
+        width: 1.5em;
+
+    }
+
+    #login #telNo {
+        width: 14em;
+
+    }
+}
+
+
+@media screen and (min-width: 1080px) {
+
+  #menu {
+      width: 1080px;
+
+  }
+
+
+  .content {
+
+      width: 1080px;
+  }
+
+  .container {
+
+      width: 1080px;
+
+  }
+
+
+ .content__main {
+
+      width: 750px;
+ 
+    }
+}
+ 
